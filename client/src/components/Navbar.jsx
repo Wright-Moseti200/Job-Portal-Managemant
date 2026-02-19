@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const navigate = useNavigate()
 
-  const backendUrl = "http://localhost:4000" // Configure this dynamically in production
+  const backendUrl = "https://job-portal-managemant.vercel.app/" // Configure this dynamically in production
 
   useEffect(() => {
     let tokens = localStorage.getItem("auth-token")
@@ -66,7 +66,7 @@ const Navbar = () => {
             setShowModal(false)
             toast.success("Recruiter Login Successful!")
             // Redirect to Admin App with token in URL to share session
-            window.location.href = `http://localhost:5174?token=${data.token}`
+            window.location.href = `https://jobportaladmin123.netlify.app?token=${data.token}`
           } else {
             toast.error(data.message)
           }
@@ -81,7 +81,7 @@ const Navbar = () => {
             localStorage.setItem('recruiter-token', data.token)
             setShowModal(false)
             toast.success("Recruiter Signup Successful!")
-            window.location.href = `http://localhost:5174?token=${data.token}`
+            window.location.href = `https://jobportaladmin123.netlify.app?token=${data.token}`
           } else {
             toast.error(data.message)
           }
