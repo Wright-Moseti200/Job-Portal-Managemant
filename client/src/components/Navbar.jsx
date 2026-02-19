@@ -16,7 +16,7 @@ const Navbar = () => {
 
   const navigate = useNavigate()
 
-  const backendUrl = "https://job-portal-managemant.vercel.app/" // Configure this dynamically in production
+  const backendUrl = "https://job-portal-managemant.vercel.app" // Configure this dynamically in production
 
   useEffect(() => {
     let tokens = localStorage.getItem("auth-token")
