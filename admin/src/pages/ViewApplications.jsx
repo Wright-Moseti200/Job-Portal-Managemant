@@ -5,7 +5,7 @@ import { toast } from 'react-toastify'
 
 const ViewApplications = () => {
     const [applications, setApplications] = useState([])
-    const backendUrl = "http://localhost:4000"
+    const backendUrl = "https://job-portal-managemant.vercel.app"
 
     const fetchApplications = async () => {
         try {

@@ -10,7 +10,7 @@ const AddJob = () => {
     const [level, setLevel] = useState("Beginner Level")
     const [salary, setSalary] = useState("")
 
-    const backendUrl = "http://localhost:4000"
+    const backendUrl = "https://job-portal-managemant.vercel.app"
 
     const onSubmitHandler = async (e) => {
         e.preventDefault()

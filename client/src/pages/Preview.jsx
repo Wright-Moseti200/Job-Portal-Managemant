@@ -11,7 +11,7 @@ const Preview = () => {
   const [loading, setLoading] = useState(true)
 
   const navigate = useNavigate()
-  const backendUrl = "http://localhost:4000"
+  const backendUrl = "https://job-portal-managemant.vercel.app"
 
   const fetchResume = async () => {
     try {

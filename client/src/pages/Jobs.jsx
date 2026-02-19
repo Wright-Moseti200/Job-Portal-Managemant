@@ -8,7 +8,7 @@ const Jobs = () => {
   const [job, setJob] = useState(null);
   const [loading, setLoading] = useState(true);
 
-  const backendUrl = "http://localhost:4000"
+  const backendUrl = "https://job-portal-managemant.vercel.app"
 
   const fetchJob = async () => {
     try {

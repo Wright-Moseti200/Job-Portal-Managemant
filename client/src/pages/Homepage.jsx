@@ -9,7 +9,7 @@ const Homepage = () => {
   let [jobs, setJobs] = useState([]);
   let [allJobs, setAllJobs] = useState([]); // Store all fetched jobs
 
-  const backendUrl = "http://localhost:4000"
+  const backendUrl = "https://job-portal-managemant.vercel.app"
 
   const fetchJobs = async () => {
     try {

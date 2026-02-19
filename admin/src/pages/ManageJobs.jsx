@@ -5,7 +5,7 @@ import { toast } from 'react-toastify' // Assuming react-toastify is usable or I
 
 const ManageJobs = () => {
     const [jobs, setJobs] = useState([])
-    const backendUrl = "http://localhost:4000"
+    const backendUrl = "https://job-portal-managemant.vercel.app"
 
     const fetchJobs = async () => {
         try {
