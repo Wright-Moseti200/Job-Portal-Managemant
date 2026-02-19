@@ -172,7 +172,7 @@ const Homepage = () => {
             {jobs.map((job) => (
               <div key={job._id} className="p-6 shadow-sm border border-gray-100 rounded-lg bg-white hover:shadow-lg transition-all duration-300 flex flex-col">
                 <div className="flex items-start justify-between mb-4">
-                  <img src={job.companyId.image} alt={job.companyId.name} className="h-8 object-contain" />
+                  <img src={assets.company_icon} alt={job.companyId.name} className="h-8 object-contain" />
                 </div>
 
                 <h4 className="font-bold text-xl text-gray-800 mb-2 truncate" title={job.title}>{job.title}</h4>
